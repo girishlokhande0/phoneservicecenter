@@ -155,21 +155,7 @@
 .single-shop-content .content-box {
   margin-left: -20px;
 }    
-    
-    
   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
 }
 
@@ -634,7 +620,7 @@
   z-index:12;
 }        
 .main-menu .navbar-header .navbar-toggle {
-  border: 2px solid #43c3ea;
+  border: 2px solid #57ba8b;
   display: inline-block;
   float: none;
   margin: 0;
@@ -711,14 +697,14 @@
   padding:10px 10px !important;
   line-height:22px;
   color:#ffffff;
-  background:#152545;
+  background:#1e201f;
   text-align:left;
 } 
 .main-menu .navbar-collapse > .navigation > li > ul > li > a{
   padding:10px 20px !important;
   line-height:22px;
   color:#ffffff;
-  background:#152545;
+  background:#1e201f;
   text-align:left;
   font-size: 13px;
   font-weight: 600;
@@ -729,13 +715,13 @@
 .main-menu .navbar-collapse > .navigation > li > a:hover,
 .main-menu .navbar-collapse > .navigation > li > a:active,
 .main-menu .navbar-collapse > .navigation > li > a:focus{
-  background:#43c3ea;
+  background:#57ba8b;
 } 
 .main-menu .navbar-collapse > .navigation > li:hover > a,
 .main-menu .navbar-collapse > .navigation > li > ul > li:hover > a,
 .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li:hover > a,
 .main-menu .navbar-collapse > .navigation > li.current > a{
-  background:#43c3ea;
+  background:#57ba8b;
   color:#ffffff !important;
 }        
 .main-menu .navbar-collapse > .navigation li.dropdown .dropdown-btn{

@@ -17,6 +17,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="images/logo.png" sizes="16x16">
     <link rel="icon" type="image/png" href="images/logo.png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Hind&family=Teko:wght@600&display=swap" rel="stylesheet">
 
     <!-- Fixing Internet Explorer-->
     <!--[if lt IE 9]>
@@ -53,8 +54,8 @@
                                 <span class="flaticon-home-page"></span>
                             </div>
                             <div class="text-holder">
-                                <h5>321, Breaking Street</h5>
-                                <h6>Newyork ,USA 10002</h6>
+                                <h5>Shop No 5, Chhotu Devji Chawl,</h5>
+                                <h6>YR Tawde Rd, Maratha Colony, Dahisar East, Mumbai, Maharashtra 400068</h6>
                             </div>
                         </li>
                         <li>
@@ -116,7 +117,8 @@
 <!--End mainmenu area-->        
 
 <!--Start rev slider wrapper-->     
-<section class="rev_slider_wrapper">
+<!-- <section class="rev_slider_wrapper">
+
     <div id="slider1" class="rev_slider"  data-version="5.0">
         <ul>
             
@@ -250,12 +252,139 @@
             </li>
         </ul>
     </div>
+</section> -->
+
+
+<!-- Slider start -->
+
+<style>
+    section.slider {
+    position: relative;
+    height: 110%;
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 93%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .slide::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(to bottom, #57ba8b 0%, #1e201fcc 100%);
+      opacity: 0.8;
+    }
+
+    .slider-content {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-align: center;
+    }
+
+    .slider-content p {
+      font-size: 72px;
+      /* line-height: 80px; */
+    }
+
+    .slider-content h3 {
+      font-size: 80px;
+      font-weight: 700;
+    }
+
+    .slider-content a.btn {
+      font-size: 16px;
+      padding: 10px 30px;
+      border: 2px solid #fff;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.3s;
+    }
+
+    .slider-content a.btn:hover {
+      background: #1e201fcc;
+      border-color: #57ba8b;
+    }
+
+    @media (max-width: 768px) {
+      .slider-content p {
+        font-size: 36px;
+      }
+
+      .slider-content h3 {
+        font-size:70px;
+      }
+    }
+</style>
+
+<section class="slider" id="slider">
+  <div class="slide active" style="background-image: url('/images/slides/1.jpg');">
+    <div class="slider-content">
+      <p style="font-size: 20px;">Using original manufactured parts and components, we are able to restore your cell phones or iDevice to like-new condition.</p>
+      <h3>Welcome to<br>Phone Service Center</h3>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </div>
+  <div class="slide" style="background-image: url('/images/slides/2.jpg');">
+    <div class="slider-content">
+      <p style="font-size: 20px;">We specialize in diagnosing and fixing all major smartphone issues using premium parts to ensure long-lasting performance.</p>
+      <h3>Welcome to<br>Phone Service Center</h3>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </div>
+  <div class="slide" style="background-image: url('/images/slides/3.jpg');">
+    <div class="slider-content">
+      <p style="font-size: 20px;">From cracked screens to motherboard repairs, our expert technicians bring your devices back to life with precision and care.</p>
+      <h3>Welcome to<br>Phone Service Center</h3>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </div>
 </section>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
+
+  function showNextSlide() {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }
+
+  setInterval(showNextSlide, 4000); // Change every 4 seconds
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<!-- End of slider -->
 <!--End rev slider wrapper--> 
     
 <!--Start call to action area-->
 <section class="call-to-action-area">
+    <h1 style="text-align: center; margin-bottom: 40px;">Services</h1>
     <div class="container">
+        
         <div class="row">
             <!--Start single item-->
             <div class="col-md-4">
@@ -308,7 +437,7 @@
                         <h5>Desktop & Mac Repair</h5>
                     </a>
                     <div class="img-holder">
-                        <img src="images/callto-action/1.jpg" alt="Awesome Image">
+                        <img src="images/callto-action/3.jpg" alt="Awesome Image">
                         <div class="overlay">
                             <div class="box">
                                 <div class="content">
@@ -458,20 +587,10 @@
                                 <img src="images/about/1.jpg" alt="Awesome Image">
                             </div>
                         </li>
-                        <li>
-                            <div class="img-holder">
-                                <img src="images/about/2.jpg" alt="Awesome Image">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-holder">
-                                <img src="images/about/3.jpg" alt="Awesome Image">
-                            </div>
-                        </li>
                     </ul>
                     <div class="text-holder">
                         <p>Our commitment to bring professionalism, good service & trust to the Phone repair service & maintenance business. We take immense pride in sending some of the most of professional technicians to yours phone to fix things that aren't workings. </p>
-                        <h3>Save time, Save money, With Quality Phone Repair Service, <span>Purchase - RepairPlus</span></h3>
+                        <h3>Save time, Save money, With Quality Phone Repair Service <span>@ Phone Service Center</span></h3>
                     </div>
                 </div>
             </div>
@@ -785,79 +904,7 @@
 
 
 <!--Start testimonial area-->
-<section class="testimonial-area">
-    <div class="container">
-        <div class="sec-title text-center">
-            <h1>Testimonials</h1>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="testimonial-carousel">
-                    <!--Start single item-->
-                    <div class="single-item text-center">
-                        <div class="img-holder">
-                            <img src="images/testimonial/1.png" alt="Awesome Image">
-                        </div>
-                        <div class="text-holder">
-                            <h5>Water Damage Repair</h5>
-                            <p>Excellent service and swift repair and I get to keep my Phone. I feel Really great.</p>
-                        </div>
-                        <div class="client-info">
-                            <div class="name pull-left">
-                                <h6>John Wiliamson</h6>
-                                <p>Newyork City</p>
-                            </div>
-                            <div class="rating-box pull-right">
-                                <p>4.5<i class="fa fa-star" aria-hidden="true"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End single item-->
-                    <!--Start single item-->
-                    <div class="single-item text-center">
-                        <div class="img-holder">
-                            <img src="images/testimonial/2.png" alt="Awesome Image">
-                        </div>
-                        <div class="text-holder">
-                            <h5>Broken Glass Repair</h5>
-                            <p>Great service as this was2nd repair with Mr.Fixit, excellent communication.</p>
-                        </div>
-                        <div class="client-info">
-                            <div class="name pull-left">
-                                <h6>Astley Fletcher</h6>
-                                <p>Los Angles</p>
-                            </div>
-                            <div class="rating-box pull-right">
-                                <p>5.0<i class="fa fa-star" aria-hidden="true"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End single item-->
-                    <!--Start single item-->
-                    <div class="single-item text-center">
-                        <div class="img-holder">
-                            <img src="images/testimonial/3.png" alt="Awesome Image">
-                        </div>
-                        <div class="text-holder">
-                            <h5>Water Damage Repair</h5>
-                            <p>Repaired my iPhone 6s through thorough examination, updated at all times.</p>
-                        </div>
-                        <div class="client-info">
-                            <div class="name pull-left">
-                                <h6>Mitchel Starc</h6>
-                                <p>California</p>
-                            </div>
-                            <div class="rating-box pull-right">
-                                <p>5.0<i class="fa fa-star" aria-hidden="true"></i></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End single item-->
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 <!--End testimonial area-->
  
 <!--Start Brand area-->  
@@ -922,7 +969,7 @@
                 <div class="footer-widget">
                     <div class="row">
                         <!--Start single footer widget-->
-                        <div class="col-lg-3 col-md-4 col-sm-12">
+                        <div class="col-lg-3 col-md-4 col-sm-12" style="margin-bottom: 50px;">
                             <div class="single-footer-widget">
                                 <div class="title">
                                     <h3>Our Services</h3>
@@ -931,39 +978,13 @@
                                     <li><a href="smartphone-repair.html">Smart Phone Repair</a></li>
                                     <li><a href="tablet-repair.html">Tablets & iPad Repair</a></li>
                                     <li><a href="desktop-repair.html">Desktop & Laptop</a></li>
-                                    <li><a href="game-repair.html">Game System Repair</a></li>
                                     <li><a href="lcd-repair.html">LCD & LED TV Repair</a></li>
-                                    <li><a href="mp3-repair.html">MP3 & MP4 Player</a></li>
                                 </ul>
                             </div>
                         </div>
                         <!--Start single footer widget-->
                         <!--Start single footer widget-->
-                        <div class="col-lg-5 col-md-4 col-sm-12">
-                            <div class="single-footer-widget subscribe-form-widget">
-                                <div class="title">
-                                    <h3>Subscribe US</h3>
-                                </div>
-                                <div class="subscribe-form">
-                                    <p>Subscribe to our newsletter!</p> 
-                                    <form action="#">
-                                        <input name="email" placeholder="Enter Your Email..." type="text">
-                                        <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-                                    </form>
-                                    <h4>We don’t do mail to spam and your mail id is confidential.</h4>
-                                </div>
-                                <div class="footer-social-links">
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <!--End single footer widget-->
                         <!--Start single footer widget-->
                         <div class="col-lg-4 col-md-4 col-sm-12">
@@ -977,7 +998,7 @@
                                             <span class="flaticon-home-page"></span>
                                         </div>
                                         <div class="text-holder">
-                                            <h5><span>32, Breaking Street,</span><br> 2nd cros, Newyork ,USA 10002</h5>
+                                            <h5><span>Shop No 5, Chhotu Devji Chawl,</span><br> YR Tawde Rd, Maratha Colony, Dahisar East, Mumbai, Maharashtra 400068</h5>
                                         </div>
                                     </li>
                                     <li>
@@ -1019,15 +1040,7 @@
                     <div class="copyright-text pull-left">
                         <p>Copyrights © 2025 All Rights Reserved by <a href="https://amplidev.live/">Amplidev Solutions.</a></p> 
                     </div>
-                    <div class="payment-method pull-right">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-cc-visa" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-cc-paypal" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-cc-mastercard" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-cc-amex" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-cc-discover" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
+                    
                     
                 </div>
             </div>

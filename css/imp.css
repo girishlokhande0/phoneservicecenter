@@ -39,7 +39,7 @@ input:-webkit-autofill:focus {
   text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Teko', sans-serif;
   font-weight: 400;
 }
 .ui-selectmenu-button.ui-state-default {
@@ -112,7 +112,7 @@ input:-webkit-autofill:focus {
 }
 /* jQuery ui dropdown Hover style */
 .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
-  background: #43c3ea none repeat scroll 0 0;
+  background: #57ba8b none repeat scroll 0 0;
   border: none;
   color: #fff;
   font-size: 14px;
@@ -128,7 +128,7 @@ input:-webkit-autofill:focus {
   padding: 12px 40px 11px;
   font-weight: 900;
   transition: all 700ms ease !important;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Teko', sans-serif;
 }
 
 /* Date picker style */
@@ -206,7 +206,7 @@ input:-webkit-autofill:focus {
   box-shadow: none;
   color: #272727;
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Teko', sans-serif;
   font-size: 18px;
   font-weight: 500;
   height: 50px;
