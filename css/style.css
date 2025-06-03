@@ -461,12 +461,12 @@ select:focus {
 .header-contact-info ul {
   margin: 5px 0;
   overflow: hidden;
-  margin-left: 100px;
+  margin-left: 180px;
 }
 .header-contact-info ul li {
   display: inline-block;
   float: left;
-  margin-right: 45px;
+  margin-right: 55px;
   position: relative;
 }
 .header-contact-info ul li:last-child{
