@@ -76,6 +76,66 @@
 </header>  
 <!--End header area--> 
 
+<!-- whatsapp start -->
+<style>
+    .pulse i {
+  position: relative;
+  z-index: 20;
+  top: 16px;
+  font-size: 30px;
+}
+.pulse {
+  position: fixed;
+  cursor: pointer;
+  display: block;
+  width: 60px !important;
+  height: 60px;
+  bottom: 100px;
+  right: 20px;
+  background-color: rgba(0, 200, 0, 1);
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  transition-duration: 0.5s;
+  animation: pulse-btn 3s infinite;
+  z-index: 9000;
+}
+
+.pulse:hover {
+  background-color: rgba(0, 150, 0, 1);
+  color: white;
+}
+
+.my-float {
+  margin-top: 15px;
+}
+
+@-webkit-keyframes pulse-btn {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 1);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 20px rgba(0, 200, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 0);
+  }
+}
+
+.pulse a {
+  color: #fff;
+}
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div>
+  <a class="btn-whats pulse" href="https://api.whatsapp.com/send?phone=919029642617&text=" target="_blank">
+    <i class="fa fa-whatsapp"></i></a>
+</div>  
+
+<!-- whatsapp end -->
+
 <!--Start mainmenu area-->
 <section class="mainmenu-area stricky">
     <div class="container">
